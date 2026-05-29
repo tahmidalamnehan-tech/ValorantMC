@@ -1,0 +1,36 @@
+name: ValorantMC
+version: 1.0.0
+main: com.valorantmc.ValorantPlugin
+api-version: 1.20
+description: Valorant-style round-based PvP with agents and guns
+author: ValorantMC
+
+commands:
+  vagent:
+    description: Select a Valorant agent
+    usage: /vagent <Jett|Sage|Phoenix|Reyna|Breach>
+  vgun:
+    description: Give yourself a gun (outside game)
+    usage: /vgun <gun>
+  vstart:
+    description: Start a Valorant game
+    usage: /vstart
+    permission: valorantmc.start
+  vstop:
+    description: Stop the current game
+    usage: /vstop
+    permission: valorantmc.stop
+  vbuy:
+    description: Buy a gun during the buy phase
+    usage: /vbuy <gun>
+  vability:
+    description: Use your agent ability
+    usage: /vability <q|e>
+
+permissions:
+  valorantmc.start:
+    description: Can start a game
+    default: op
+  valorantmc.stop:
+    description: Can stop a game
+    default: op
