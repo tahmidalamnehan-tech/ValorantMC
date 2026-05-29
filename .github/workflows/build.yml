@@ -11,8 +11,8 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - run: mvn clean package -f ValorantPlugin/pom.xml
+      - run: mvn clean package
       - uses: actions/upload-artifact@v3
         with:
           name: ValorantMC-JAR
-          path: ValorantPlugin/target/ValorantMC-1.0.0.jar
+          path: target/ValorantMC-1.0.0.jar
